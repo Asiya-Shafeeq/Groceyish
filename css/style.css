@@ -4,6 +4,19 @@
     list-style: none;
     text-decoration: none;
     cursor: pointer;
+    font-family: 'Sora-Regular';
+}
+@font-face {
+    font-family:'Sora-Bold' ;
+    src: url(../font/Sora-Bold.ttf);
+}
+@font-face {
+    font-family: 'Sora-Light';
+    src: url(../font/Sora-Light.ttf);
+}
+@font-face {
+    font-family: 'Sora-Regular';
+    src: url(../font/Sora-Regular.ttf);
 }
 img{
     width: 100%;
@@ -173,6 +186,7 @@ nav label.bars{
 }
 #meain header.two .left a{
     color: #fff;
+    font-size: 11px;
 }
 .two .midle ul{
     display: flex;
@@ -182,9 +196,11 @@ nav label.bars{
 }
 #meain header.two .midle ul li{
     display: flex;
-}
-#meain header.two .midle ul li {
+    align-items: center;
     margin-right: 1.5rem;
+}
+#meain header.two .midle ul li a{
+    font-size: 11px;
 }
 #meain header.two .midle ul li:nth-child(4){
     margin-right: 4rem;
@@ -194,9 +210,6 @@ nav label.bars{
 }
 #meain .two{
     display: flex;
-}
-#meain .two .input{
-    display: none;
 }
 #meain .two .input form{
     display: flex;
@@ -248,11 +261,11 @@ nav label.bars{
     padding-top: 100px;
 }
 .spotlight h1{
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 2rem;
 }
 .spotlight p{
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 2rem;
     color: #898787;
 }
@@ -514,7 +527,6 @@ background-color: #DEF9EC;
     background-size: cover;
     background-position: center;
     background-color:#FFF5E1;
-    position: relative;
 }
 #products .boxes ul li.two{
     background-image: url(../images/Rectangle\ 1.svg);
@@ -522,24 +534,15 @@ background-color: #DEF9EC;
     background-size: cover;
     background-position: center;
     background-color: #D2EFE1;
-    position: relative;
 }
 #products .boxes ul li.two .left {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 60%;
+    
 }
 #products .boxes ul li.one .left {
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   width: 35.5%;
+   width: 33.5%;
 }
-#products .boxes ul li.one .left img{
-    
+#products .boxes ul li.two .left {
+    width: 55.5%;
 }
 #products .boxes ul li a.button{
     padding: 10px 15px;
@@ -725,48 +728,65 @@ background-color: #DEF9EC;
 #items .wrapper{
 
 }
-#items div.items{
+#items .items{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
-#items div.items div.item{
-    display: flex;
+#items .item{
 }
-#items div.items div.item ul{
-    /* display: flex; */
+#items .item ul{
+    
 }
-#items div.items div.item ul li{
-    display: flex;
-    margin-bottom: 2rem;
-    border: 1px solid #000;
-}
-#items div.items div.item ul li span.img{
-    background-color: #F4F6FA;
-}
-#items div.items div.item ul li span.box{
-    padding: 10px;
-}
-#items div.items div.item ul li span.box h5{
 
+#items .item ul li{
+    margin-bottom: 1rem;
 }
-#items div.items div.item ul li span.box span.star{
-    width: 60%;
-    display: flex;
+#items .item ul li span.top{
+    padding-bottom: 3rem;
 }
-#items div.items div.item ul li span.box span.star h6{
-    color: #ADADAD;
+#items .item ul li .top h4{
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
-#items div.items div.item ul li span.box span.price{
+#items .item ul li .top a.img{
+    margin-bottom: 2rem;
+    width: 80%;
+    display: block;
+}
+#items .item ul li span.img{
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #f9f4f4;
+    border-radius: 5px;
+}
+#items .item ul li span.container{
     display: flex;
     align-items: center;
 }
-#items div.items div.item ul li span.box span.price h5{
+#items .item ul li span.box{
+
+}
+#items .item ul li span.box h5{
+    margin-bottom: 5px;
+}
+#items .item ul li span.box span.star{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#items .item ul li span.box span.star h6{
+    color: #ADADAD;
+}
+#items .item ul li span.box span.price{
+    display: flex;
+    align-items: center;
+}
+#items .item ul li span.box .price h5{
     font-size: 18px;
     color: #3BB77E;
-    margin-right: 10px;
+    margin-right: 5px;
 }
-#items div.items div.item ul li span.box span.price h6{
+#items .item ul li span.box .price h6{
     color: #ADADAD;
 }
 #app{
@@ -845,6 +865,7 @@ background-color: #DEF9EC;
     margin-bottom: 10px;
 }
 #bottom .bottom ul li a.box p{
+    font-size: 13px;
     color: #ADADAD;
 }
 #bottom .wrapper hr.line{
@@ -892,6 +913,7 @@ footer .footer .left ul li a.icon{
 }
 footer .footer .left ul li a{
     color: #ADADAD;
+    font-size: 13px;
 }
 footer .wrapper hr.line{
     margin: 1rem 0;
@@ -915,6 +937,7 @@ footer .footer .right ul li a.link-name{
 }
 footer .footer .right ul li a{
     color: #ADADAD;
+    font-size: 13px;
 }
 footer .bottom{
     display: flex;
@@ -965,55 +988,79 @@ footer .bottom .right ul li a i{
 
 
 
-
-@media screen and (max-width: 1440px) {
+ @media screen and (max-width: 1440px) {
     #products .boxes ul li.two .left {
-        width: 55.5%;
+        width: 51%;
     }
     #products .boxes ul li.one .left {
-        width: 33%;
+        width: 30.5%;
     }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px){
     #products .boxes ul li.one .left {
-        width: 38%;
+        width: 35.5%;
     }
-    #products .boxes ul li.two .left{
-        width: 64%;
+    #products .boxes ul li.two .left {
+        width: 73%;
     }
-    #sells .box ul li.form form div.input_box div.text-center a.button{
-        padding: 10px 15px;
+    #meain .one .middle .input form{
+        width: 123%;
     }
-    #items div.items div.item ul {
-        width: 100%;
+    #sells .box ul li.form form div.input_box input {
+        font-size: 10px;
     }
 }
  @media screen and (max-width: 1080px) {
-    #meain .one .middle .input form{
-        width: 105%;
+     #meain .one .middle .input form {
+        width: 108%;
     }
-    #meain header.two .left a{
-        font-size: 11px;
+    #meain header.two{
+        margin: 0 2rem;
     }
-    #meain header.two .left{
-        margin-right: 12px;
+    .spotlight{
+        width: 360px;
+        padding-top: 70px;
     }
-    #meain header.two .midle ul li{
-        margin-right: 1rem;
+    .spotlight h1{
+        font-size: 35px;
     }
-    #meain header.two .midle ul li:nth-child(4){
-        margin-right: 2rem;
+    #bg .box .right{
+        width: 50%;
     }
+    #categories .wrapper .box ul li{
+        width: 14%;
+        height: 165px;
+    }
+    #products .boxes ul li span.box p{
+        font-size: 14px;
+        margin-bottom: 2rem;
+    }
+    #products .boxes ul li span.box h4{
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
+    #products .boxes ul li.one .left {
+        width: 41.5%;
+    }
+    #products .boxes ul li.two .left {
+        width: 65%;
+        padding-top: 10%;
+    }
+    #items .item ul {
+        width: 80%;
+    }
+    #app .meain .left h1{
+        font-size: 40px;
+    }
+ }
+  @media screen and (max-width: 980px) {
     #meain .one .right ul li.like{
         display: none;
     }
     #meain .one .right ul li.shoping {
         display: none;
     }
-    #meain .one .input form a.search {
-        left: 58.5%;
-    }
-    .two .midle ul{
+     .two .midle ul{
         position: fixed;
         top: 0;
         right: -100%;
@@ -1036,68 +1083,55 @@ footer .bottom .right ul li a i{
     #check:checked ~ ul{
         right: 0;
     }
-    #meain header.two .midle ul li{
-        margin-top: 40px;
-        margin-left: 2rem;
+    #meain header.two .midle ul li {
+        margin-top: 3rem;
+        padding-left: 2rem;
+    }
+    .spotlight p {
+        font-size: 15px;
+        margin-bottom: 1rem;
     }
     #meain header.two .midle ul li a{
-        color: #fff ;
+        color: #fff;
     }
-    .spotlight{
-        width: 360px;
-        padding-top: 70px;
+    #meain header.one {
+        margin: 0 2rem;
     }
-    .spotlight h1{
-        font-size: 38px;
-    }
-    #bg .box .right{
-        width: 50%;
-    }
-    #categories .wrapper .box ul li{
-        width: 14%;
-        height: 165px;
-    }
-     #products .items ul li{
-        width: 21%;
-        margin-bottom: 2rem;
-    }
-    #products .items ul li:nth-child(4){
-        margin-bottom: 0;
-        margin-left: 18%;
-    }
-    #products .items ul li:nth-child(5){
-        margin-bottom: 0;
-        margin-right: 18%;
-    }
-    #products .box span.arrow {
-        display: none;
-    }
-    #products .boxes ul li.one .left {
-        width: 42.5%;
-    }
-    #products .boxes ul li.two .left {
-        width: 71.5%;
-    }
-    #sells .box ul li.form form div.input_box div.text-center a.button{
-        padding: 10px 6px;
-    }
-    #products .wrapper {
-        margin: 0 1rem;
-    }
-} 
- @media screen and (max-width: 980px) {
     .spotlight {
         width: 386px;
     }
     .spotlight h1{
         font-size: 31px;
+        margin-bottom: 1rem;
     }
     .spotlight p{
         font-size: 17px;
     }
+    #categories .top h1 {
+        font-size: 27px;
+    }
     #categories .wrapper .box ul li{
         width: 21%;
         margin-bottom: 2rem;
+    }
+    #categories .top ul li a{
+        font-size: 13px;
+    }
+    #products .items ul li {
+        width: 27%;
+    }
+    #products .items ul li:nth-child(4){
+        margin-top: 1rem;
+    }
+    #products .items ul li:nth-child(5){
+        margin-top: 1rem;
+        margin-right: 34%;
+    }
+    #products .boxes ul li.one .left {
+        width: 30.5%;
+    }
+    #products .boxes ul li.two .left {
+        width: 40.5%;
     }
     #products .boxes ul{
         display: block;
@@ -1109,14 +1143,14 @@ footer .bottom .right ul li a i{
     #products .boxes ul li:last-child{
         margin-bottom: 0;
     }
-    #products .boxes ul li.two .left {
-        width: 55.5%;
-    }
-    #products .boxes ul li.one .left {
-    width: 33%;
-    }
     #products .boxes ul{
         margin-left: 5%;
+    }
+    #items {
+        padding-bottom: 1rem;
+    }
+    #items .items{
+        display: block;
     }
     #sells .wrapper .box ul li {
         width: 32%;
@@ -1132,9 +1166,28 @@ footer .bottom .right ul li a i{
         margin-bottom: 0;
         margin-right: 15%;
     }
+    #sells .box ul li.form form div.input_box div.text-center a.button{
+        padding: 10px 16px;
+    }
     #app .meain .left h1{
-        font-size: 35px;
+        font-size: 28px;
         margin-bottom: 1rem;
+    }
+    #app .meain .left p{
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+    #bottom .bottom ul li a.img{
+        width: 45%;
+    }
+    #bottom .bottom ul li a.one {
+        width: 85%;
+    }
+    #bottom .bottom ul li a.box p {
+        font-size: 11px;
+    }
+    #bottom .bottom ul li a.box h4{
+        font-size: 12px;
     }
     footer .footer{
         display: block;
@@ -1150,13 +1203,16 @@ footer .bottom .right ul li a i{
     footer .bottom .right ul li a{
         padding: 8px;
     }
- }
+ } 
  @media screen and (max-width: 768px) {
     .spotlight {
         width: 370px;
     }
     #meain .one .input form a.search {
         left: 59.8%;
+    }
+    #meain .one .middle .input form {
+        display: none;
     }
     .spotlight h1{
         font-size: 26px;
@@ -1184,8 +1240,14 @@ footer .bottom .right ul li a i{
     #products .items ul li{
         width: 26%;
     }
-    #products .items ul li:nth-child(5){
-        margin-right: 15%;
+    #products .items ul li:nth-child(5) {
+        margin-right: 34%;
+    }
+    #products .boxes ul{
+        margin-left: 0;
+    }
+    #products .boxes ul li{
+        width: 475px;
     }
     #products .box .top ul li{
         margin-right: 10px;
@@ -1231,7 +1293,7 @@ footer .bottom .right ul li a i{
         width: 65%;
     }
     footer .footer .right ul li a{
-        font-size: 15px;
+        font-size: 13px;
     }
     footer .bottom .left h4{
         font-size: 13px;
@@ -1239,16 +1301,39 @@ footer .bottom .right ul li a i{
     footer .bottom .right ul li a {
         padding: 6px;
     }
-}
-@media screen and (max-width: 640px) {
-    #meain .one .middle .input form{
-        display: none;
+    footer .footer .right ul li a.link-name{
+        font-size: 18px;
     }
+    #items .items{
+        display: block;
+    }
+    #items .item {
+        width: 40%;
+    }
+    #items .item ul {
+        width: 260%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    #items .item ul li span.container{
+        border: 1px solid #000;
+    }
+    #items{
+        padding-bottom: 0;
+    } 
+} 
+ @media screen and (max-width: 640px) {
     #meain .wrapper{
         margin: 0 1rem;
     }
-        #meain .two .input{
-        display: block;
+    #meain header.one {
+        margin: 0 0rem;
+    }
+    #meain header.two {
+        margin: 0px 0rem;
+    }
+    #categories .top h1 {
+        font-size: 18px;
     }
     .spotlight{
         padding-top: 50px;
@@ -1258,6 +1343,13 @@ footer .bottom .right ul li a i{
     }
     .spotlight p {
         font-size: 11px;
+    }
+    .spotlight a.button{
+        padding: 0 10px;
+        font-size: 10px;
+    }
+    .spotlight form input{
+        font-size: 9px;
     }
     #bg .box .right{
         width: 78%;
@@ -1269,7 +1361,7 @@ footer .bottom .right ul li a i{
         font-size: 14px;
     }
     #categories .top ul li a{
-        font-size: 10px;
+        font-size: 8px;
     }
     #categories .top ul li{
         margin-right: 5px;
@@ -1284,14 +1376,22 @@ footer .bottom .right ul li a i{
         font-size: 18px;
     }
     #products .items ul li {
-        width: 32%;
+        width: 41%;
+    }
+    #products .items ul li:nth-child(3){
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     #products .items ul li:nth-child(5) {
         margin-right: 0;
+        margin-top: 0;
         margin-left: 30%;
     }
     #products .items ul li:nth-child(4){
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+    #sells .box ul li.form form div.input_box div.text-center a.button{
+        font-size: 13px;
     }
     #products .boxes ul li.one .left {
         display: none;
@@ -1311,6 +1411,9 @@ footer .bottom .right ul li a i{
     #bottom .wrapper {
         margin: 0 1em;
     }
+    footer .footer .left .logo{
+        display: none;
+    }
     footer .footer .left ul li a{
         font-size: 14px;
     }
@@ -1321,20 +1424,25 @@ footer .bottom .right ul li a i{
         padding: 4px;
         font-size: 9px;
     }
+    footer .bottom .left h4 {
+        font-size: 11px;
+    }
     footer .wrapper{
         margin: 0 3rem;
     }
-
-}
- @media screen and (max-width: 540px) {
+} 
+@media screen and (max-width: 540px) {
+    nav label.button {
+        font-size: 30px;
+    }
     #bg .box .right {
         width: 88%;
     }
     #bg .wrapper{
         margin-left: 2rem;
     }
-    #meain header.two .left{
-        display: none;
+    .spotlight form input{
+        font-size: 9px;
     }
     .spotlight form {
         width: 132%;
@@ -1346,29 +1454,38 @@ footer .bottom .right ul li a i{
         margin-bottom: 0;
         margin-left: 35%;
     }
+    #categories .top{
+        padding: 2rem 1rem;
+    }
     #categories .top h1{
         font-size: 18px;
     }
     #products .items ul li {
-        width: 30%;
+        width: 39%;
     }
     #products .items ul li span.price a {
         padding: 0 2px;
     }
+    #products .items ul li:nth-child(5){
+        margin-left: 0;
+    }
     #products .box .top {
-        margin: 0;
+        margin: 0 1rem;
     }
     #categories .wrapper .box ul li {
         height: 180px;
-    }
-    #products .boxes ul{
-        margin-left: 15%;
     }
     #products .boxes ul li {
         width: 313px;
     }
     #sells .box ul li.form form div.input_box div.text-center a.button {
         font-size: 13px;
+    }
+    #app {
+        padding-bottom: 1rem;
+    }
+    #bottom .bottom ul li a.box h4 {
+        font-size: 9px;
     }
     #app .meain .left h1 {
         font-size: 20px;
@@ -1379,7 +1496,7 @@ footer .bottom .right ul li a i{
     footer .wrapper {
         margin: 0 1rem;
     }
-}
+} 
 @media screen and (max-width: 480px) {
     #bg .box .right {
         width: 100%;
@@ -1387,8 +1504,15 @@ footer .bottom .right ul li a i{
     .spotlight {
         width: 405px;
     }
+    .spotlight h1 {
+        font-size: 15px;
+    }
+    .spotlight p {
+        font-size: 9px;
+    }
     .spotlight form {
-        width: 160%;
+        width: 140%;
+        padding: 5px 0;
     }
     #categories .top{
        padding: 2rem 1rem;
@@ -1443,11 +1567,17 @@ footer .bottom .right ul li a i{
         width: 50%;
         height: 320px;
     }
+    #items .wrapper {
+        margin: 0 1rem;
+    }
+    #items .item ul{
+        width: 223%;
+    }
     #app .meain {
     padding: 0px 1rem;
     }
     #app{
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
     #bottom .bottom ul li a.box h4 {
         font-size: 10px;
@@ -1459,13 +1589,17 @@ footer .bottom .right ul li a i{
         padding-bottom: 0;
     }
     footer .footer .right ul li a.link-name{
-        font-size: 17px;
+        font-size: 13px;
     }
     footer .footer .right ul li a {
-        font-size: 12px;
+        font-size: 10px;
+        line-height: normal;
     }
     footer .footer .right ul li {
         line-height: 1.3rem;
+    }
+    footer .footer .left ul li a {
+        font-size: 12px;
     }
     footer .bottom .middle{
         display: none;
@@ -1476,4 +1610,4 @@ footer .bottom .right ul li a i{
     footer .footer .left .logo {
         display: none;
     }
-}
+} 
