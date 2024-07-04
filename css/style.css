@@ -1663,4 +1663,16 @@ footer div.bottom div.right ul li a i{
     footer div.footer div.left h1.logo {
         display: none;
     }
+    footer div.footer div.left div.box h4{
+        font-size: 18px;
+    }
+    footer div.footer div.left div.logo {
+        margin-right: 1rem;
+    }
+    footer div.footer div.left ul li {
+        line-height: 1.5rem;
+    }
+    footer div.footer div.left ul li a {
+        font-size: 8px;
+    }
 }  
