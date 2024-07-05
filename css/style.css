@@ -573,10 +573,10 @@ background-color: #DEF9EC;
     display: inline-block;
     background-color: #3BB77E;
 }
-#sells div.box ul li.form form div.input_box div.text-center{
-    padding-top: 6rem;
+#sells div.box ul li.form form div.text-center{
+    margin-top: 7rem;
 }
-#sells div.box ul li.form form div.input_box div.text-center a.register{
+#sells div.box ul li.form form div.text-center a.register{
     font-size: 15px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -673,12 +673,13 @@ background-color: #DEF9EC;
 }
 #sells div.box ul li.form form div.input_box{
     color: #000;
-    position: relative;
     margin-top: 30px;
-    padding: 0 30px;
+    padding: 0 10px;
     height: 40px;
     border: 1px solid#000;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 #sells div.box ul li.form form div.input_box input{
     width: 100%;
@@ -686,13 +687,9 @@ background-color: #DEF9EC;
     height: 100%;
     border: none;
     outline: none;
+    margin-left: 10px;
 }
 #sells div.box ul li.form form div.input_box i{
-    position: absolute;
-    top: 31%;
-    left: 5%;
-    right: 0;
-    bottom: 0;
 }
 #items{
     padding-bottom: 5rem;
@@ -996,9 +993,9 @@ footer div.bottom div.right ul li a i{
     }
     
     #sells div.box ul li.form form div.input_box div.text-center{
-        padding-top: 4rem;
+        margin-top: 4.5rem;
     }
-    #sells div.box ul li.form form div.input_box div.text-center a.register{
+    #sells div.box ul li.form form div.text-center a.register{
         font-size: 10px;
     }
 }
@@ -1225,8 +1222,8 @@ footer div.bottom div.right ul li a i{
     footer div.bottom div.right ul li a{
         padding: 8px;
     }
-    #sells div.box ul li.form form div.input_box div.text-center {
-        padding-top: 7rem;
+    #sells div.box ul li.form form div.text-center {
+        margin-top: 7rem;
     }
  }
  @media screen and (max-width: 768px) {
@@ -1349,8 +1346,11 @@ footer div.bottom div.right ul li a i{
     #items{
         padding-bottom: 0;
     } 
-    #sells div.box ul li.form form div.input_box div.text-center {
-        padding-top: 4.5rem;
+    #sells div.box ul li.form form div.text-center {
+        margin-top: 4.5rem;
+    }
+    #sells div.box ul li.form form div.input_box input{
+        font-size: 12px;
     }
 } 
  @media screen and (max-width: 640px) {
@@ -1458,11 +1458,14 @@ footer div.bottom div.right ul li a i{
     footer .wrapper{
         margin: 0 3rem;
     }
-    #sells div.box ul li.form form div.input_box div.text-center a.register {
+    #sells div.box ul li.form form div.text-center a.register {
         padding: 10px;
     }
-    #sells div.box ul li.form form div.input_box div.text-center {
-        padding-top: 3.5rem;
+    #sells div.box ul li.form form div.text-center {
+        margin-top: 3.5rem;
+    }
+    #sells div.box ul li.form form div.input_box input{
+        font-size: 10px;
     }
 } 
  @media screen and (max-width: 540px) {
@@ -1683,7 +1686,7 @@ footer div.bottom div.right ul li a i{
     footer div.footer div.left ul li a {
         font-size: 8px;
     }
-    #sells div.box ul li.form form div.input_box div.text-center {
-        padding-top: 9.5rem;
+    #sells div.box ul li.form form div.text-center {
+        margin-top: 9.5rem;
     }
 }  
